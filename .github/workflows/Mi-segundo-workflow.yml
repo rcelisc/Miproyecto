@@ -18,6 +18,7 @@ jobs:
     steps:
     # Runs a single command using the runners shell
     - name: Imprimir
+      id: imprimir
       env:
         MI_VARIABLE: Hola mundo
       run:  echo "::set-output name=respuesta::${MI_VARIABLE}"
